@@ -1,5 +1,6 @@
-#pragma once
-#include <sys/time.h>
+#ifndef APPROXIDATE_H
+# define APPROXIDATE_H
+# include <sys/time.h>
 
 /**
  * Get a unix timestamp from an arbitrary date string.
@@ -24,3 +25,5 @@ int approxidate_relative(
 	const char*           date,
 	struct timeval*       tv,
 	const struct timeval* relative_to);
+
+#endif /* !defined(APPROXIDATE_H) */
