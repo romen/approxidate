@@ -1,3 +1,7 @@
-/approxidate-test
 /approxidate
+/approxidate-test
+/approxidate-static
+/approxidate-shared
 /*.o
+/*.a
+/*.so
