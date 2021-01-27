@@ -1,3 +1,0 @@
-import typing
-
-def approx(date: str, relative_to: typing.Optional[float]) -> float: ...

@@ -1,4 +1,4 @@
-# Approxidate [![Build Status](https://github.com/thatguystone/approxidate/workflows/test/badge.svg)](https://github.com/thatguystone/approxidate/actions)
+# Approxidate [![Build Status](https://github.com/romen/approxidate/workflows/test/badge.svg)](https://github.com/romen/approxidate/actions)
 
 Taken from Linus' original code in `/git/date.c`, approxidate gives you a
 dead-simple way to get a timestamp from tons of date formats.  Unlike git's

@@ -66,6 +66,6 @@ clean:
 	rm -f $(LIBTARGET_SHARED) $(LIBTARGET_STATIC) $(CMDTARGET_SHARED) $(CMDTARGET_STATIC)
 	rm -f $(CMDTARGET)
 	rm -f approxidate-test
-	$(MAKE) -C python clean
+#	$(MAKE) -C python clean
 
 .PHONY: all test clean mkinstalldir install
