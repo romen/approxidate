@@ -8,7 +8,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define FORMAT "%Y-%m-%dT%H:%M:%SZ"
+#define FORMAT "%Y-%m-%dT%H:%M:%S%z"
 
 static
 void usage(const char *progname)
@@ -20,11 +20,11 @@ void usage(const char *progname)
 static
 int format_timeval(struct timeval tv, char *out, size_t max)
 {
-    struct tm *gm = NULL;
+    struct tm *tm = NULL;
 
-    gm = gmtime(&tv.tv_sec);
+    tm = localtime(&tv.tv_sec);
 
-    return strftime(out, max, FORMAT, gm);
+    return strftime(out, max, FORMAT, tm);
 }
 
 int main(int argc, const char *argv[])
